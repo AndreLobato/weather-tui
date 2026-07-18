@@ -102,7 +102,6 @@ fn main() -> io::Result<()> {
 mod tests {
     #[cfg(test)]
     use super::*;
-    use ratatui::style::Style;
 
 
     #[test]
@@ -121,6 +120,7 @@ mod tests {
 
     #[test]
     fn render() {
+        use ratatui::style::Style;
         let app = App::default();
         let mut buf = Buffer::empty(Rect::new(0, 0, 50, 4));
 
